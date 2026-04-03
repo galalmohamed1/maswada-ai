@@ -1,0 +1,52 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="80" y1="60" x2="430" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9F1C"/>
+      <stop offset="0.5" stop-color="#D633B0"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+
+    <linearGradient id="textGradient" x1="300" y1="360" x2="410" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <filter id="shadow" x="0" y="0" width="512" height="512" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect x="64" y="64" width="384" height="384" rx="64" fill="url(#bgGradient)"/>
+
+  <g filter="url(#shadow)">
+    <!-- antenna -->
+    <rect x="250" y="138" width="12" height="36" rx="6" fill="white"/>
+    <circle cx="256" cy="126" r="14" fill="#67E8F9"/>
+
+    <!-- robot head -->
+    <path d="M170 210C170 165.817 205.817 130 250 130H262C306.183 130 342 165.817 342 210V268C342 312.183 306.183 348 262 348H250C205.817 348 170 312.183 170 268V210Z" fill="white"/>
+
+    <!-- ears -->
+    <rect x="150" y="208" width="28" height="96" rx="14" fill="#E5E7EB"/>
+    <rect x="334" y="208" width="28" height="96" rx="14" fill="#E5E7EB"/>
+
+    <!-- chin bubble tail -->
+    <path d="M220 340L206 380L244 354" fill="white"/>
+
+    <!-- face visor -->
+    <rect x="192" y="186" width="128" height="86" rx="36" fill="#111827"/>
+
+    <!-- eyes -->
+    <rect x="214" y="214" width="34" height="22" rx="8" fill="#22D3EE"/>
+    <rect x="264" y="214" width="34" height="22" rx="8" fill="#22D3EE"/>
+    <rect x="223" y="220" width="16" height="6" rx="3" fill="#CFFAFE"/>
+    <rect x="273" y="220" width="16" height="6" rx="3" fill="#CFFAFE"/>
+
+    <!-- smile -->
+    <path d="M222 254C232 266 280 266 290 254" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- text -->
+  <text x="128" y="390" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="white">maswada</text>
+  <text x="356" y="390" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="url(#textGradient)">.ai</text>
+</svg>

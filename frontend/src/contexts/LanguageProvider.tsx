@@ -13,6 +13,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
   const navigate = useNavigate();
   const location = useLocation();
   const params = useParams<{ locale?: string }>();
+  
 
   // Extract locale from URL params or pathname
   const getLocaleFromPath = (): Locale => {
