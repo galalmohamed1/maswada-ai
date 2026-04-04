@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import { AppLayout } from "@/app/layout/AppLayout";
 import { HomePage } from "@/app/pages/HomePage";
@@ -54,6 +55,7 @@ export default function App() {
             />
           </Routes>
           <ToastContainer />
+          <Analytics />
         </IntlWrapper>
       </LanguageProvider>
     </BrowserRouter>
